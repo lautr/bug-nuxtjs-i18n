@@ -1,5 +1,13 @@
+<script setup lang="ts">
+const i18nHead = useLocaleHead({
+  addSeoAttributes: {
+    canonicalQueries: [],
+  },
+})
+console.log({i18nHead})
+</script>
 <template>
   <div>
-    <NuxtWelcome />
+    {{i18nHead}}
   </div>
 </template>
